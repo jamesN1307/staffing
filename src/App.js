@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
+import {Navbar, Footer, Header, Sidebar } from './components'
+import { Calendar, employees, home, kanban, profile } from './pages'
 import './App.css'
 import { BiBorderRadius } from 'react-icons/bi';
 import { act } from '@testing-library/react';
@@ -39,16 +40,16 @@ const App = () => {
             <div>
                 <Routes>
                  {/* dashboard  */}
-                    <Route path='/' element="Home" />
-                    <Route path='/dashboard' element="Home" />
+                    <Route path='/' element={<home />} />
+                    <Route path='/dashboard' element={<home />} />
                 {/* pages */}
-                    <Route path='/schedule' element="schedule" />
-                    <Route path='/profile' element="profile" />
-                    <Route path='/employees' element="employees" />
+                    <Route path='/schedule' element={<schedule />} />
+                    <Route path='/profile' element={<profile />} />
+                    <Route path='/employees' element={<employees />} />
 
                 {/* app */}
-                    <Route path='/kanban' element="kanban" />
-                    <Route path='/calendar' element="calendar" />
+                    <Route path='/kanban' element={<kanban />} />
+                    <Route path='/calendar' element={<calendar />} />
                 
                 </Routes>
             </div>
