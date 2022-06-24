@@ -2,6 +2,7 @@ import React from 'react';
 import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import { IoAccessibilityOutline, IoAccessibility, IoBagAddSharp,IoBagAddOutline, IoBandageOutline,IoBandage,IoBandageSharp, IoFileTraySharp, IoHome,  } from 'react-icons/io5'
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
@@ -474,8 +475,8 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'Home',
+        icon: <IoFileTraySharp />,
       },
     ],
   },
@@ -484,16 +485,32 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'ACFP',
+        icon: <IoAccessibilityOutline />,
       },
       {
-        name: 'employees',
-        icon: <IoMdContacts />,
+        name: 'CAN',
+        icon: <IoAccessibility />,
       },
       {
-        name: 'customers',
-        icon: <RiContactsLine />,
+        name: 'CLINIC',
+        icon: <IoBagAddSharp />,
+      },
+      {
+        name: 'MEDF3',
+        icon: <IoBagAddOutline />,
+      },
+      {
+        name: 'MEDR4',
+        icon: <IoBandageOutline />,
+      },
+      {
+        name: 'SURG5',
+        icon: <IoBandage />,
+      },
+      {
+        name: 'SURG6',
+        icon: <IoBandageSharp />,
       },
     ],
   },
@@ -503,6 +520,10 @@ export const links = [
       {
         name: 'calendar',
         icon: <AiOutlineCalendar />,
+      },
+      {
+        name: 'Roster',
+        icon: <IoMdContacts />,
       },
       {
         name: 'kanban',
@@ -515,44 +536,6 @@ export const links = [
       {
         name: 'color-picker',
         icon: <BiColorFill />,
-      },
-    ],
-  },
-  {
-    title: 'Charts',
-    links: [
-      {
-        name: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
       },
     ],
   },
