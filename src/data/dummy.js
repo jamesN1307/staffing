@@ -512,6 +512,14 @@ export const links = [
         name: 'SURG6',
         icon: <IoBandageSharp />,
       },
+      {
+        name: 'Rehab',
+        icon: <IoBandageSharp />,
+      },
+      {
+        name: 'Overflow',
+        icon: <IoBandageSharp />,
+      },
     ],
   },
   {

@@ -11,4 +11,6 @@ export { default as Roster } from './Roster'
 export { default as Surg5 } from './Surg5'
 export { default as Surg6 } from './Surg6'
 export { default as Profile } from './Profile'
+export { default as Overflow } from './Overflow'
+export { default as Rehab } from './Rehab'
 
