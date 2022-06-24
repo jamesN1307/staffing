@@ -7,8 +7,10 @@ import { Calendar, Employees, Home, Kanban, Profile, ACFP, CAN, Clinic, MedF3, M
 import './App.css'
 import { BiBorderRadius } from 'react-icons/bi';
 import { act } from '@testing-library/react';
+import { useStateContext } from './context/ContextProvider';
+
 const App = () => {
-    const activeMenu = true
+  const { activeMenu } = useStateContext()
   return (
     <div >
     <BrowserRouter>
@@ -20,7 +22,7 @@ const App = () => {
           >
             <button
               type="button"
-              className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
+              className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray "
             >
               <FiSettings />
             </button>
