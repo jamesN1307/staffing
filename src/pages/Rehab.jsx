@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/style.css'
 
 const Rehab = () => {
   const current = new Date();
@@ -13,18 +14,24 @@ const Rehab = () => {
         <h1>Date: {today}</h1>     
       </header>
       <br />
-      <section className='columns-4'>
-        <div>
-          <h1>Employee Name</h1>
+      <section class='flex-container'>
+        <div class='col-25'>
+          <h1 >Employee Name</h1>
         </div>
-        <div>
-          <h1>Position/Profile</h1>
+        <div class='col-25'>
+          <h1 >Position/Profile</h1>
         </div>
-        <div>
-          <h1>Code</h1>
+        <div class='col-25'>
+          <h1 >Code</h1>
         </div>
-        <div>
-          <h1>Sitters</h1>
+        <div class='col-25'>
+          <h1 >Sitters</h1>
+          <hr />
+          <p>7a:</p><br />
+          <p>11a:</p><br />
+          <p>3p:</p><br />
+          <p>7p:</p><br />
+          <p>11p:</p><br />
         </div>
       </section>
       <br />
