@@ -5,7 +5,7 @@ class Signup extends Component {
         super(props);
 
         this.initialState = {
-            username: 'z',
+            username: '',
             password: '',
             firstName: '',
             lastName: '',

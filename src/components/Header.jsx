@@ -1,8 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+<<<<<<< HEAD
 
 const current = new Date();
 const today = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
+=======
+>>>>>>> dev
 
 const Header = ({ category, title }) => (
   <div className=" mb-10 columns-2" class="flex flex-row">
