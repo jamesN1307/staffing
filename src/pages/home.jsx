@@ -1,14 +1,15 @@
 import React from 'react'
-
+import Header from '../components/Header'
 const Home = () => {
   const current = new Date();
   const today = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`
   return (
     <div>
-      <header className='columns-2'>
+      {/* <header className='columns-2'>
         <h1 className="text-2xl">Clinic</h1>
         <h1 className="text-xl">Date: {today}</h1>
-      </header>
+      </header> */}
+      <Header title="Daily Staffing Analysis Report -- AC "/>
       <main>
         <br></br>
         <section class="md:columns-2 sm:columns-1">
