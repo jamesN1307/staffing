@@ -13,5 +13,7 @@ export { default as Surg6 } from './Surg6'
 export { default as Profile } from './Profile'
 export { default as Overflow } from './Overflow'
 export { default as Rehab } from './Rehab'
-export { default as Schedule } from './Schedule'
+export { default as NewEmployee } from './NewEmployee'
+export { default as Signup } from './Signup'
+export { default as Login } from './Login'
 

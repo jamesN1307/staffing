@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
-
+import { Link } from 'react-router-dom'
 import { Button } from '.';
 import { userProfileData } from '../data/dummy';
 import { useStateContext } from '../context/ContextProvider';
@@ -30,7 +30,7 @@ const UserProfile = () => {
         <div>
           <p className="font-semibold text-xl dark:text-gray-200"> Michael Roberts </p>
           <p className="text-gray-500 text-sm dark:text-gray-400">  Administrator   </p>
-          <p className="text-gray-500 text-sm font-semibold dark:text-gray-400"> notyourEmail@gmail.com </p>
+          <p className="text-gray-500 text-sm font-semibold dark:text-gray-400"> info@shop.com </p>
         </div>
       </div>
       <div>
@@ -53,12 +53,14 @@ const UserProfile = () => {
       </div>
       <div className="mt-5">
         <Button
-          color="white"
+          color="black"
           bgColor={currentColor}
           text="Logout"
           borderRadius="10px"
-          width="full"
-        />
+          width="full"></Button>
+
+
+  
       </div>
     </div>
 
