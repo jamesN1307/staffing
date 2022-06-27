@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import {Navbar, Footer, Header, Sidebar } from './components'
-import { Calendar, Employees, Home, Kanban, Profile, ACFP, CAN, Clinic, MedF3, MedR4, Roster, Surg5, Surg6, Rehab, Overflow, NewEmployee, Signup} from './pages'
+import { Calendar, Employees, Home, Kanban, Profile, ACFP, CAN, Clinic, MedF3, MedR4, Roster, Surg5, Surg6, Rehab, Overflow, NewEmployee, Signup, Login} from './pages'
 
 import './App.css'
 import { BiBorderRadius } from 'react-icons/bi';
@@ -53,7 +53,7 @@ const App = () => {
 
             <Routes>
               {/* dashboard  */}
-              <Route path="/" element={(<Home />)} />
+              <Route path="/" element={(<Login />)} />
               <Route path="/Home" element={(<Home />)} />
 
               {/* pages  */}
@@ -73,6 +73,7 @@ const App = () => {
               <Route path="/Rehab" element={<Rehab />} />
               <Route path="/NewEmployee" element={<NewEmployee />} />
               <Route path="/Signup" element={<Signup />} />
+              <Route path="/Login" element={<Login />} />
             </Routes>
           </div>
           <Footer />
