@@ -5,6 +5,7 @@ import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft
 import { IoAccessibilityOutline, IoAccessibility, IoBagAddSharp,IoBagAddOutline, IoBandageOutline,IoBandage,IoBandageSharp, IoFileTraySharp, IoHome,  } from 'react-icons/io5'
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
+import { FcDepartment } from "react-icons/fc";
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
@@ -75,8 +76,8 @@ const gridEmployeeProfile = (props) => (
 
 const gridEmployeeCountry = (props) => (
   <div className="flex items-center justify-center gap-2">
-    <GrLocation />
-    <span>{props.Country}</span>
+    <FcDepartment />
+    <span>{props.Department}</span>
   </div>
 );
 export const EditorData = () => (
@@ -449,7 +450,7 @@ export const employeesGrid = [
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  { headerText: 'Department',
     width: '120',
     textAlign: 'Center',
     template: gridEmployeeCountry },
@@ -1476,9 +1477,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'CAN',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar3,
@@ -1486,9 +1487,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'CAN',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1496,9 +1497,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'CAN',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1506,9 +1507,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'CAN',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1516,9 +1517,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'CLINIC',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1526,9 +1527,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'CLINIC',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1536,9 +1537,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'CLINIC',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1546,9 +1547,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'CLINIC',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1557,9 +1558,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1567,9 +1568,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'CNA',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1577,9 +1578,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1587,9 +1588,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1597,9 +1598,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1607,9 +1608,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1617,9 +1618,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar,
@@ -1627,9 +1628,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1637,9 +1638,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1647,9 +1648,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1657,9 +1658,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1667,9 +1668,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1677,9 +1678,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1687,9 +1688,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1698,9 +1699,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1708,9 +1709,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1718,9 +1719,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1728,9 +1729,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1738,9 +1739,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1748,9 +1749,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1758,9 +1759,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1769,9 +1770,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1779,9 +1780,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1789,9 +1790,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1799,9 +1800,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1809,9 +1810,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1819,9 +1820,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1829,9 +1830,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1840,9 +1841,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1850,9 +1851,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1860,9 +1861,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1870,9 +1871,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1880,9 +1881,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1890,9 +1891,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1900,9 +1901,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1911,9 +1912,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1921,9 +1922,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -1931,9 +1932,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1941,9 +1942,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1951,9 +1952,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -1961,9 +1962,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -1971,9 +1972,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -1982,9 +1983,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -1992,9 +1993,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -2002,9 +2003,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -2012,9 +2013,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2022,9 +2023,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG6',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2032,9 +2033,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -2042,9 +2043,9 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'RN',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
     avatar2,
@@ -2053,9 +2054,9 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDR4',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar3,
@@ -2063,9 +2064,9 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar4,
@@ -2073,9 +2074,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'SURG5',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
@@ -2083,9 +2084,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2093,9 +2094,9 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: "LPN",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'MEDF3',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2103,9 +2104,9 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: "CNA",
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Department:  'REHAB',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar2,
